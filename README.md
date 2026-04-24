@@ -11,7 +11,9 @@
 | 版本 | 網址 | 部署來源 | 用途 |
 |---|---|---|---|
 | 🧪 **測試版** | <https://heyitseliii.github.io/nii-checkout-complete/> | GitHub Pages（`main` branch） | 給同事確認 |
-| ✅ **正式版** | <https://thanks.nii.school/> | Cloudflare Pages（`production` branch） | 同學實際看到的頁面 |
+| ✅ **正式版** | <https://nii-checkout-complete.pages.dev/> | Cloudflare Pages（`production` branch） | 同學實際看到的頁面，給開課快手後台填 |
+
+> 未來若能在管理 `nii.school` DNS zone 的 Cloudflare 帳號加一筆 CNAME，就能升級成 `thanks.nii.school`。目前先用 pages.dev 網址上線。
 
 ## 🔄 改動 → 上線流程
 
@@ -26,7 +28,7 @@ push 到 main branch
   ↓
 main merge 到 production branch
   ↓
-✅ 正式版（thanks.nii.school）自動更新
+✅ 正式版（nii-checkout-complete.pages.dev）自動更新
 ```
 
 **關鍵原則**：`main` 測試版隨時可改；`production` 正式版只在同事確認後才 merge。
@@ -59,7 +61,7 @@ git push origin main
 ## ⚙️ 分支設定
 
 - `main` → GitHub Pages 自動部署 → 🧪 測試版
-- `production` → Cloudflare Pages 自動部署 → ✅ 正式版（`thanks.nii.school`）
+- `production` → Cloudflare Pages 自動部署 → ✅ 正式版（`nii-checkout-complete.pages.dev`）
 
 ## 相關專案
 
